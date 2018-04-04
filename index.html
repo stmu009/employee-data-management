@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Employee Data Management</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-3">Employee Data Management</h1>
+            <p class="lead">A Comprehensive Directory of Employee Billable Hours</p>
+        </div>
+    </div>
+    <table class="table">
+        <h1>Current Employees</h1>
+        <thead>
+            <tr>
+                <th>Employee Name</th>
+                <th>Role</th>
+                <th>Start Date</th>
+                <th>Months Worked</th>
+                <th>Monthly Rate ($)</th>
+                <th>Total Billed ($)</th>
+            </tr>
+        </thead>
+        <tbody id="employee-table">
+            
+        </tbody>
+    </table>
+
+    <div class="form-group">
+        <h1>Add Employee</h1>
+        <label for="">Employee Name</label>
+        <input type="text" name="" id="employeeName" class="form-control" placeholder="" aria-describedby="helpId">
+        <label for="">Role</label>
+        <input type="text" name="" id="role" class="form-control" placeholder="" aria-describedby="helpId">
+        <label for="">Start Date (DD/MM/YY - ex: 01/01/89)</label>
+        <input type="text" name="" id="startDate" class="form-control" placeholder="" aria-describedby="helpId">
+        <label for="">Monthly Rate</label>
+        <input type="text" name="" id="monthlyRate" class="form-control" placeholder="" aria-describedby="helpId">
+        <br>
+        <button id="submit-button" type="submit" class="btn btn-primary">Submit</button>
+    </div>
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
